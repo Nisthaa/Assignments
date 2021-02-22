@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+    <div class="box">
+        <form method="POST" onsubmit="return validateForm()">
+        <h1>Registration Form</h1><br>
+        <div class="info">
+            <label for="">Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+
+            Email <br><input type="email" id="email" pattern=".+@gmail.com" placeholder="example@gmail.com" inputmode="email" ><br>
+            Phone <br><input type="number" pattern="^\d{10}$" inputmode="numeric" id="phn" placeholder="phone number" ><br>
+            Birth Date <br> <input type="date" id="dob" name="dob"><br>
+
+            <label for="" id="gender">Gender</label><br>
+            <input type="radio" name="gender" id="msex" value="male">Male
+            <input type="radio" name="gender" id="fsex" value="female">Female
+            <input type="radio" name="gender" id="osex" value="other">Other <br>
+
+            Password <br><input type="password" id="pwd" placeholder="password" name="pwd"><br>
+            Confirm Password <br><input type="password" id="pwd2" placeholder="confirm password" name="pwd2"><br>
+            Address <br><textarea name="addr" id="addr" cols="30" rows="3" maxlength="1000"></textarea><br>
+            
+            <label for="">Resume </label>
+            <input type="file" name="" id="file"><br>
+            
+            <label id="contact" for="contact">What is the best way to contact you?</label><br>
+            <input type="checkbox" name="contact" id="pc" class="contact"> Phone call <br>
+            <input type="checkbox" name="contact" id="em" class="contact"> Email <br>
+            <input type="checkbox" name="contact" id="mes" class="contact"> Message <br>
+            <input type="checkbox" name="contact" id="all" class="contact"> All <br>
+
+            <label for="site"> How did you hear about us?</label><br>
+            <select name="site" id="site">
+                <option value="0">Select</option>
+                <option value="Fb">Facebook</option>
+                <option value="tw">Twitter</option>
+                <option value="ld">Linkdlin</option>
+                <option value="it">Instagram</option>
+            </select><br>
+
+            <label for="refer">How likely would you recommend us?</label><br>
+            <input type="range" id="refer" name="refer" value="0"><br>
+            <input type="checkbox" id="tnc" name="tnc"> I agree to <a href="tnc.html" target="_blank">Terms and Conditions</a>  <br>
+            <button type="submit"  >Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

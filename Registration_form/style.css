@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(166, 223, 233);
+    position: absolute;
+    top: -40px;
+    left: 300px;
+    box-sizing: content-box;
+    padding: 40px;
+    width: 600px;
+    height: 450px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+}
+h1{
+    font-weight: 300;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration:underline;
+}
+.info{
+    margin-top: -40px;
+    margin:0 auto; 
+    width:450px;
+    padding:20px;
+    background:white;
+    border:3px solid #333;
+}
+
+input,textarea,button,select {
+    margin:2px 10px 20px 0;    
+}
+input{
+    height: 30px;
+}
+input[type="radio"],input[type="checkbox"]{
+    height: 15px;
+}
+label{
+    margin: 0 0 5px 0;
+}
+button[type="submit"]{
+    margin-bottom: 28px;
+    width: 100px;
+    height: 28px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+input[type="reset"]{
+    margin-bottom: 28px;
+    margin-left: 50px;
+    position: relative;
+    top: 0;
+    width: 100px;
+    height: 28px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+button[type="submit"]:hover, button[type="submit"]:focus,
+input[type="reset"]:hover, input[type="reset"]:focus{
+    background-color: chartreuse;
+}
