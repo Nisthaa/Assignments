@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validate.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <form method="POST" onsubmit="return validateForm()" action="login.html">
+            <h1>Registration Form</h1><br>
+            <div class="info">
+                <label for="">Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" id="mname" name="mname" placeholder="Middle Name">
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+
+                Email <br><input type="email" id="email" pattern=".+@gmail.com" placeholder="example@gmail.com"
+                    inputmode="email"><br>
+                Phone <br><input type="number" pattern="^\d{10}$" inputmode="numeric" id="phn"
+                    placeholder="Primary number">
+                <input type="number" pattern="^\d{10}$" inputmode="numeric" id="phn2" placeholder="Alternate number"><br>
+                
+                Password <br><input type="password" id="pwd" placeholder="password" name="pwd"><br>
+                Confirm Password <br><input type="password" id="pwd2" placeholder="confirm password" name="pwd2"><br>
+                
+                Birth Date <br> <input type="date" id="dob" name="dob"><br>
+
+                <label for="" id="gender">Gender</label><br>
+                <input type="radio" name="gender" id="msex" value="male">Male
+                <input type="radio" name="gender" id="fsex" value="female">Female
+                <input type="radio" name="gender" id="osex" value="other">Other <br>
+                
+                Current Address <br><textarea name="addr" id="addr" cols="25" rows="2" maxlength="1000"></textarea><br>
+                City <input type="text" name="city" id="city" placeholder="City" maxlength="100">
+                State <input type="text" name="state" id="state" placeholder="State"><br>
+                <label for="">Country</label>
+                <select name="country" id="con">
+                    <option selected="" value="0">(Please select a country)</option>
+                    <option value="IND">India</option>
+                    <option value="AUS">Australia</option>
+                    <option value="CAN">Canada</option>
+                    <option value="RAS">Russia</option>
+                    <option value="US">USA</option>
+                </select>
+                Zip Code <input type="number" name="zip" id="zip" placeholder="Zip Code"><br>
+
+                Permanent Address <br><textarea name="addr" id="addr2" cols="25" rows="2" maxlength="1000"></textarea><br>
+                City <input type="text" name="city" id="city2" placeholder="City" maxlength="100">
+                State <input type="text" name="state" id="state2" placeholder="State"><br>
+                <label for="">Country</label>
+                <select name="country" id="con2">
+                    <option selected="" value="0">(Please select a country)</option>
+                    <option value="IND">India</option>
+                    <option value="AUS">Australia</option>
+                    <option value="CAN">Canada</option>
+                    <option value="RAS">Russia</option>
+                    <option value="US">USA</option>
+                </select>
+                Zip Code <input type="number" name="zip" id="zip2" placeholder="Zip Code"><br>
+
+
+
+                <label for="">Interests?</label><br>
+                <input type="checkbox" name="contact" id="sp" class="contact"> Sports <br>
+                <input type="checkbox" name="contact" id="b" class="contact"> Books <br>
+                <input type="checkbox" name="contact" id="cs" class="contact"> Computer & Software <br>
+                <input type="checkbox" name="contact" id="f" class="contact"> Fashion <br>
+                <input type="checkbox" name="contact" id="ph" class="contact"> Photography <br>
+                <input type="checkbox" name="contact" id="food" class="contact"> Food <br>
+                <input type="checkbox" name="contact" id="all" class="contact"> All <br>
+
+                <label for=""> Subscribe to the Newsletter?</label>
+                <select name="letter" id="letter">
+                    <option value="0">Select</option>
+                    <option value="y">YES</option>
+                    <option value="n">NO</option>
+                </select><br>
+
+                <button type="submit">Submit</button>
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

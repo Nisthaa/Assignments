@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishList</title>
+    <link rel="icon" type="images/png" href="images/cart.png"  />
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        .col{
+            float: left;
+            /* padding: 10px; */
+        }
+        .left{
+            width: 40%;
+        }
+        .right{
+            width: 60%;
+        }
+
+        td {
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #1687a7;
+            font-style: italic;
+            font-family: 'Alex Brush';
+        }
+        h2{
+            color:rgb(255, 166, 0);
+        }
+        button{
+            margin: 2px 10px 20px;
+            width: 100px;
+            height: 35px;
+            background: rgb(196, 113, 196);
+            border-radius: 2px;
+            border: none;
+            color: #fff;
+            font:cursive 400;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.2 ease;
+        }
+        button:hover{
+            background-color: royalblue;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col left">
+                <table>
+                    <tr>
+                        <td><img src="images/logo_invert.jpg" alt="Logo" sizes="50x50" style="border-radius: 50%; margin-top:0px;">
+                        </td>
+                        <td>
+                            <h1>You Wish We Deliver!!!</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h1>Shopping like never before.</h1>
+                            <h2>While our website is finishing up,<br> 
+                                Please Register/Login to claim exciting rewards or Membership benefits!</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="window.location= 'register.html'">Register</button>
+                        </td>
+                        <td>
+                            <button onclick="window.location='login.html'">Login</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col right">
+                <img src="images/Banner.jpg" alt=""
+                style="right: 0px; height: 625px; width: 800px; margin-bottom:0%; ">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
