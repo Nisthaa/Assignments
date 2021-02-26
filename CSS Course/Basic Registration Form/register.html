@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body style="background: white; font-size: 20px; margin-top: -10px;">
+    <div class="box" style="border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; width: 40%;margin-left: 400px;">
+        <form method="POST" action="">
+            <h1 style="color: yellowgreen; font-family: serif;">Registration Form</h1>
+            <hr style="width: 107%; margin-left: -20px; border: 1px solid yellowgreen;"><br>
+            <div class="info" style="margin-top: -30px;">
+                <label for="">Name</label><span class="required" style="color: red;">*</span><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name" 
+                style="padding: 8px 10px;margin: 4px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" 
+                style="margin-bottom: 10px;padding: 8px 10px;margin: 4px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required><br>
+
+                <label for="">Email</label><span class="required" style="color: red;">*</span><br>
+                <input type="email" id="email" pattern=".+@gmail.com" placeholder="example@gmail.com"
+                inputmode="email" style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required><br>
+                <label for="">Phone</label><span class="required" style="color: red;">*</span><br>
+                <input type="number" pattern="^\d{10}$" inputmode="numeric" id="phn"
+                    placeholder="Primary number" style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required>
+                <input type="number" pattern="^\d{10}$" inputmode="numeric" id="phn2" placeholder="Alternate number" 
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                
+                <label for="">Password</label><span class="required" style="color: red;">*</span><br>
+                <input type="password" id="pwd" placeholder="password" 
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" name="pwd" required><br>
+                <label for="">Confirm Password</label><span class="required" style="color: red;">*</span><br>
+                <input type="password" id="pwd2" placeholder="confirm password" name="pwd2"
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required><br>
+
+                <div>
+                <label for="" id="gender">Gender</label><span class="required" style="color: red;">*</span>
+                <input type="radio" name="gender" id="msex" value="male">Male
+                <input type="radio" name="gender" id="fsex" value="female">Female
+                <input type="radio" name="gender" id="osex" value="other" style="margin-bottom: 10px;">Other <br>
+                </div>
+
+                <label for="">Current Address</label><span class="required" style="color: red;">*</span><br>
+                <input type="text" name="" id="addr" placeholder="Address" maxlength="1000" required
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;">
+                <label for="" style="margin-left: 36px;">City</label><span class="required" style="color: red;">*</span> 
+                <input type="text" name="city" id="city" placeholder="City" maxlength="100"
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required><br>
+                <label for="">State</label><span class="required" style="color: red;">*</span>
+                <select  name="state" id="state" style="margin-bottom: 10px;padding: 5px; font-family:Arial, Helvetica, sans-serif;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required>
+                    <option selected="" value="0">Please select a state</option>
+                    <option value="jh">Jharkhand</option>
+                    <option value="or">Orissa</option>
+                    <option value="up">UP</option>
+                    <option value="b">Bihar</option>
+                    <option value="m">Maharashtra</option>
+                    <option value="v">Victoria</option>
+                    <option value="ql">Queensland</option>
+                    <option value="t">Tasmania</option>
+                    <option value="cal">California</option>
+                    <option value="tx">Texas</option>
+                    <option value="wt">Washington</option>
+                    <option value="ot">Others</option>
+                </select>
+                <label for="" style="margin-left: 5px;">Country</label><span class="required" style="color: red;">*</span>
+                <select name="country" id="con" style="padding: 5px; font-family:Arial, Helvetica, sans-serif;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required>
+                    <option selected="" value="0">Please select a country</option>
+                    <option value="IND">India</option>
+                    <option value="AUS">Australia</option>
+                    <option value="US">USA</option>
+                </select> <br>
+
+                <label for="">Permanent Address</label><br>
+                <input type="text" name="" id="addr" placeholder="Address" maxlength="1000"
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;">
+                <label for=""style="margin-left: 36px;">City </label>
+                <input type="text" name="city" id="city2" placeholder="City" maxlength="100"
+                style="margin:4px 0 10px; padding:8px 10px; display: inline-block; border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"><br>
+                <label for="">State</label>
+                <select name="state" id="state2" 
+                style="margin-bottom: 10px;padding: 5px; font-family:Arial, Helvetica, sans-serif;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required>
+                    <option selected="" value="0">Please select a state</option>
+                    <option value="jh">Jharkhand</option>
+                    <option value="or">Orissa</option>
+                    <option value="up">UP</option>
+                    <option value="b">Bihar</option>
+                    <option value="m">Maharashtra</option>
+                    <option value="v">Victoria</option>
+                    <option value="ql">Queensland</option>
+                    <option value="t">Tasmania</option>
+                    <option value="cal">California</option>
+                    <option value="tx">Texas</option>
+                    <option value="wt">Washington</option>
+                    <option value="ot">Others</option>
+                </select>
+                <label for=""style="margin-left: 15px;">Country</label>
+                <select name="country" id="con2" style="padding: 5px; font-family:Arial, Helvetica, sans-serif;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;"required>
+                    <option selected="" value="0">Please select a country</option>
+                    <option value="IND">India</option>
+                    <option value="AUS">Australia</option>
+                    <option value="US">USA</option>
+                </select> <br>
+
+                <label for=""> Subscribe to the Newsletter?</label><span class="required" style="color: red;">*</span>
+                <select name="letter" id="letter" style="margin-bottom: 10px;padding: 5px; font-family:Arial, Helvetica, sans-serif;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" required>
+                    <option value="0">Select</option>
+                    <option value="y">YES</option>
+                    <option value="n">NO</option>
+                </select><br>
+
+                <button type="submit" onmouseover="this.style.backgroundColor='#9eff00'" onmouseout="this.style.backgroundColor='#ff0000'" 
+                style="width: 70px;height: 30px; border-radius: 2px;background-color: red;color: white;border: none;text-transform: uppercase;cursor: pointer;">Submit</button>
+                <input type="reset" value="Reset" onmouseover="this.style.backgroundColor='#9eff00'" onmouseout="this.style.backgroundColor='#ff0000'" 
+                style="width: 70px;height: 30px; border-radius: 2px;background-color: red;color:white;border: none;text-transform: uppercase;cursor: pointer;">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
